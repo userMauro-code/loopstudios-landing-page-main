@@ -6,71 +6,95 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 <body>
   <header class="header">
-
+    <div class="header__flex-row">
+      <a href="#" class="header__logo">
+        <img src="./images/logo.svg" alt="logo Loopstudios">
+      </a>
+      <nav class="header__nav">
+        <button aria-label="open menu" aria-expanded="false" aria-controls="menu"><img src="./images/icon-hamburger.svg" alt=""></button>
+        <ul class="header__menu" id="menu">
+          <li class="header__item"><a class="header__link" href="">About</a></li>
+          <li class="header__item"><a class="header__link" href="">Careers</a></li>
+          <li class="header__item"><a class="header__link" href="">Events</a></li>
+          <li class="header__item"><a class="header__link" href="">Products</a></li>
+          <li class="header__item"><a class="header__link" href="">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__hero">
+      <h1 class="header__title">Immersive experiences that deliver</h1>
+    </div>
   </header>
   <main class="main">
     <section class="about">
-
-    </section>
-
-    <section class="creations">
-
-    </section>
-  </main>
- 
-  <footer class="footer">
-
-  </footer>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      <picture class="about__image">
+        <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 768px)">
+        <img src="./images/mobile/image-interactive.jpg" alt="persona con casco de realidad virtual">
+      </picture>
+      <h2 class="about__title">The leader in interactive VR</h2>
+      <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality 
   projects for some of the best companies around the globe. Our award-winning 
   creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  to their brand.</p>
+    </section>
+    <section class="creations">
+      <h2 class="creations__title">Our creations</h2>
+      <article class="creations__card">
+        <span class="creations__name">Deep earth</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">Night arcade</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">Soccer team vr</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">the grid</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">From up above vr</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">Pocket borealis</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">the curiosity</span>
+      </article>
+      <article class="creations__card">
+        <span class="creations__name">Make it fisheye</span>
+      </article>
+      <button class="creations__button">See all</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer__logo">
+      <img src="./images/logo.svg" alt="">
+    </a>
+    <ul class="footer__nav">
+      <li class="footer__item"><a class="footer__link" href="#">About</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Careers</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Products</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Support</a></li>
+    </ul>
+    <div class="footer__redes">
+      <a class="footer__redes-link" aria-label="facebook"><img src="./images/icon-facebook.svg" alt=""></a>
+      <a class="footer__redes-link" aria-label="twitter"><img src="./images/icon-twitter.svg" alt=""></a>
+      <a class="footer__redes-link" aria-label="pinterest"><img src="./images/icon-pinterest.svg" alt=""></a>
+      <a class="footer__redes-link" aria-label="instagram"><img src="./images/icon-instagram.svg" alt=""></a>
+    </div>
+    <p class="footer__copy"> © 2021 Loopstudios. All rights reserved.</p>
+  </footer>
 </body>
 </html>
