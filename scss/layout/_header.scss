@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+
+header {
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5em 1em;
+    height: 90vh;
+
+   .header__flex-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__menu {
+        position: absolute;
+        transform: translateX(1000%);
+        transition: trasform 0.3s ease;
+    }
+}
+}
+

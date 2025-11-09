@@ -1,1 +1,101 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 85%);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 0%);
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+header {
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5em 1em;
+  height: 90vh;
+}
+header .header__flex-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__flex-row .header__menu {
+  position: absolute;
+  transform: translateX(1000%);
+  transition: trasform 0.3s ease;
+}/*# sourceMappingURL=main.css.map */
