@@ -8,9 +8,21 @@ $clr-text-body: $clr-neutral-300;
 $clr-text-heading: $clr-neutral-900;
 
 // fonts
-$ff-primary: 'Josefin Sans', sans-serif;
-$ff-secundary: 'Alata', sans-serif;
+$ff-primary: 'Alata', sans-serif;
+$ff-secondary: 'Josefin Sans', sans-serif;
 
+// font weight
 $fw-regular: 300;
 $fw-bold: 400;
+
+// fontsize
+$fs-100: 0.9375rem; //15px
+$fs-200: 1.75rem;   //28px
+$fs-300: 2.5rem;    //40px
+$fs-400: 3rem;      //48px
+$fs-500: 4.5rem;    //72px
+
+$fs-body: $fs-100;
+$fs-h2: $fs-200;
+$fs-h1: $fs-500;
 

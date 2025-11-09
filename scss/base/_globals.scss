@@ -1,0 +1,43 @@
+body {
+    background-color: $clr-body;
+    font-family: $ff-primary;
+    color: $clr-text-body;
+    font-size: $fs-body;
+    font-weight: $fw-regular;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: $ff-secondary;
+    color: $clr-text-heading;
+    font-weight: $fw-bold;
+    font-size: $fs-h1;
+    line-height: 1.1;
+
+    @media(min-width: 768px){
+        font-size: $fs-500;
+    }
+}
+
+h2 {
+    font-family: $ff-secondary;
+    color: $clr-text-heading;
+    font-size: $fs-h2;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: $fs-300;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    background: none;
+    border: none;
+}
