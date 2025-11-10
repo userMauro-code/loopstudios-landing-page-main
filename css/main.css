@@ -40,14 +40,24 @@ body {
   font-size: 0.9375rem;
   font-weight: 300;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
+  padding: inline;
 }
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
-  color: hsl(0, 0%, 0%);
-  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
   font-size: 4.5rem;
-  line-height: 1.1;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   h1 {
@@ -86,6 +96,14 @@ header {
   background-repeat: no-repeat;
   padding: 1.5em 1em;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  header {
+    background-image: url(../images/desktop/image-hero.jpg);
+  }
 }
 header .header__flex-row {
   position: relative;
@@ -94,8 +112,16 @@ header .header__flex-row {
   align-items: center;
   justify-content: space-between;
 }
-header .header__flex-row .header__menu {
+header .header__flex-row .header__nav .header__menu {
   position: absolute;
   transform: translateX(1000%);
-  transition: trasform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+header .header__hero {
+  border: 3px solid hsl(0, 0%, 100%);
+  padding: 1.5em;
+  margin-bottom: 10rem;
+}
+header .header__hero .header__title {
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */

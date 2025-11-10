@@ -7,14 +7,19 @@ body {
     font-size: v.$fs-body;
     font-weight: v.$fw-regular;
     line-height: 1.5;
-}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
+ }
 
 h1 {
     font-family: v.$ff-secondary;
-    color: v.$clr-text-heading;
-    font-weight: v.$fw-bold;
+    color: v.$clr-body;
+    font-weight: v.$fw-regular;
     font-size: v.$fs-h1;
-    line-height: 1.1;
+    line-height: 1;
 
     @media(min-width: 768px){
         font-size: v.$fs-500;
