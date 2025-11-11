@@ -7,18 +7,22 @@ body {
     font-size: v.$fs-body;
     font-weight: v.$fw-regular;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 .container {
   max-width: 375px;
   width: 100%;
-  margin: auto;
- }
+    
+}
 
 h1 {
     font-family: v.$ff-secondary;
     color: v.$clr-body;
     font-weight: v.$fw-regular;
-    font-size: v.$fs-h1;
+    font-size: v.$fs-300;
     line-height: 1;
 
     @media(min-width: 768px){
@@ -47,4 +51,5 @@ button {
     font: inherit;
     background: none;
     border: none;
+}
 }

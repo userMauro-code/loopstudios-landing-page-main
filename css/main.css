@@ -43,46 +43,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
-.container {
+body .container {
   max-width: 375px;
   width: 100%;
-  margin: auto;
-  padding: inline;
 }
-
-h1 {
+body h1 {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 0%, 100%);
   font-weight: 300;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 @media (min-width: 768px) {
-  h1 {
+  body h1 {
     font-size: 4.5rem;
   }
 }
-
-h2 {
+body h2 {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 0%, 0%);
   font-size: 1.75rem;
   line-height: 1.2;
 }
 @media (min-width: 768px) {
-  h2 {
+  body h2 {
     font-size: 2.5rem;
   }
 }
-
-a {
+body a {
   text-decoration: none;
   color: inherit;
 }
-
-button {
+body button {
   cursor: pointer;
   font: inherit;
   background: none;
@@ -99,6 +93,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   header {
@@ -106,6 +101,7 @@ header {
   }
 }
 header .header__flex-row {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -114,14 +110,17 @@ header .header__flex-row {
 }
 header .header__flex-row .header__nav .header__menu {
   position: absolute;
-  transform: translateX(1000%);
-  transition: transform 0.3s ease;
 }
 header .header__hero {
   border: 3px solid hsl(0, 0%, 100%);
-  padding: 1.5em;
-  margin-bottom: 10rem;
+  padding: 1em;
+  align-self: self-start;
+  max-width: 100%;
+  margin: auto;
+  align-self: start;
 }
 header .header__hero .header__title {
-  width: 80%;
+  width: 100%;
+  word-wrap: break-word;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
