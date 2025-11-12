@@ -33,8 +33,8 @@ h1 {
 h2 {
     font-family: v.$ff-secondary;
     color: v.$clr-text-heading;
-    font-size: v.$fs-h2;
-    line-height: 1.2;
+    font-size: v.$fs-200;
+    line-height: 1;
 
     @media (min-width: 768px) {
         font-size: v.$fs-300;
