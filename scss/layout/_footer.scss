@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as v;
+
+footer {
+    background-color: v.$clr-text-heading;
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    gap: 2em;
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        color: v.$clr-body;
+    }
+
+    .footer__redes {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .footer__copy {
+        color: v.$ff-secondary;
+    }
+}

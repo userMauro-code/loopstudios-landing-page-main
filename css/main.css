@@ -83,6 +83,31 @@ body button {
   border: none;
 }
 
+footer {
+  background-color: hsl(0, 0%, 0%);
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0;
+  gap: 2em;
+}
+footer .footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: hsl(0, 0%, 100%);
+}
+footer .footer__redes {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+footer .footer__copy {
+  color: "Josefin Sans", sans-serif;
+}
+
 header {
   background-image: url(../images/mobile/image-hero.jpg);
   background-position: center;
@@ -109,7 +134,7 @@ header .header__flex-row {
   justify-content: space-between;
 }
 header .header__flex-row .header__nav .header__menu {
-  position: absolute;
+  background-color: rebeccapurple;
 }
 header .header__hero {
   border: 2px solid hsl(0, 0%, 100%);
@@ -214,4 +239,6 @@ main .creations .creations__button {
   border: 2px solid hsl(0, 0%, 0%);
   width: 50%;
   padding: 0.7em 0;
+  margin-top: 1em;
+  letter-spacing: 4px;
 }/*# sourceMappingURL=main.css.map */
