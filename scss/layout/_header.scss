@@ -11,6 +11,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    position: relative;
 
     @media(min-width: 768px){
         background-image: url(../images/desktop/image-hero.jpg);
@@ -18,22 +19,14 @@ header {
 
    .header__flex-row {
     width: 100%;
-    position: relative;
+    // position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // align-self: start;
-    // margin: auto;
-
-    .header__nav {
-        .header__menu {
-        background-color: rebeccapurple;
-        // transform: translateX(1000%);
-        // transition: transform 0.3s ease;
-    }
-    } 
-}
+    z-index: 30;
+   }
+   
 
 .header__hero {
     border: 2px solid v.$clr-body;
@@ -50,5 +43,34 @@ header {
         text-transform: uppercase;
     }
 }
+
 }
 
+    .header__nav { 
+        height: 100%;
+        width: 100;
+        position: fixed;
+        inset: 0;
+        
+        .header__nav-active {
+            background-color: v.$clr-neutral-900;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: v.$ff-secondary;
+        text-transform: uppercase;
+        gap: 1em;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-left: 1em;
+    }
+        .header__menu {
+        width: 100vw;
+        height: 100vh;
+        inset: 0;
+        z-index: 20;
+        background-color: v.$clr-text-heading;
+    } 
+
+
+}

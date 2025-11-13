@@ -46,7 +46,6 @@ body {
   align-items: center;
 }
 body .container {
-  max-width: 375px;
   width: 100%;
 }
 body h1 {
@@ -119,6 +118,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  position: relative;
 }
 @media (min-width: 768px) {
   header {
@@ -127,14 +127,11 @@ header {
 }
 header .header__flex-row {
   width: 100%;
-  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-header .header__flex-row .header__nav .header__menu {
-  background-color: rebeccapurple;
+  z-index: 30;
 }
 header .header__hero {
   border: 2px solid hsl(0, 0%, 100%);
@@ -147,6 +144,32 @@ header .header__hero .header__title {
   width: 100%;
   word-wrap: break-word;
   text-transform: uppercase;
+}
+
+.header__nav {
+  height: 100%;
+  width: 100;
+  position: fixed;
+  inset: 0;
+}
+.header__nav .header__nav-active {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  gap: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-left: 1em;
+}
+.header__nav .header__menu {
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 20;
+  background-color: hsl(0, 0%, 0%);
 }
 
 main {
@@ -187,6 +210,7 @@ main .creations .creations__card-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 main .creations .creations__card-content .creations__card {
   width: 100%;
