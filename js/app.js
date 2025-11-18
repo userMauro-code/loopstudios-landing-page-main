@@ -1,9 +1,10 @@
 const menu = document.getElementById("menu");
-const btnMenu = document.querySelector(".btn__menu");
+const btnMenu = document.querySelector(".header__btn-menu");
 const btnClose = document.querySelector(".header__logo-close")
 
 btnMenu.addEventListener("click", ()=>{
     if(btnMenu.getAttribute("aria-expanded") === "false"){
+        console.log("click");
         btnMenu.setAttribute("aria-expanded", "true");
         menu.hidden = false;
         btnClose.setAttribute("src", "../images/icon-close.svg");

@@ -13,9 +13,12 @@ body {
     align-items: center;
 
 .container {
-//   max-width: 375px;
-  width: 100%;
-    
+    width: 100%;
+    // @media(min-width: 768px){
+    //     max-width: 1444px;
+    //     width: 100%;
+    //     padding: 5em 10em;
+    // }
 }
 
 h1 {

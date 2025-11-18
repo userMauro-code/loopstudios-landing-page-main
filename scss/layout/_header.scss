@@ -12,19 +12,39 @@ header {
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-
     @media(min-width: 768px){
         background-image: url(../images/desktop/image-hero.jpg);
+        padding: 0 15em;
+        position: static;
+        overflow: auto;
+        height: 80vh;
+        justify-content: space-around;
     }
+
+
 
    .header__flex-row {
     width: 100%;
-    // position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 30;
+
+    @media(min-width: 768px){
+        position: relative;
+        justify-content: space-between;
+        padding-bottom: 10em;
+        
+    }
+  
+
+    .header__btn-menu {
+        z-index: 999;
+       @media (min-width:768px){
+        display: none;
+       }
+    }
    }
    
 
@@ -34,6 +54,13 @@ header {
     max-width: 100%;
     margin: auto;
     align-self: start;
+
+    @media(min-width: 768px){
+        max-width: 45%;
+        margin-top: 8em;
+        align-self: flex-start;
+        margin: 0;
+    }
     
    
 
@@ -48,29 +75,60 @@ header {
 
     .header__nav { 
         height: 100%;
-        width: 100;
+        width: 100%;
         position: fixed;
         inset: 0;
+        @media(min-width: 768px){
+            position: static;
+            height: auto;
+            width: auto;
+        }
+
+        #menu[hidden]{
+            @media(min-width: 768px){
+                display: flex !important;
+            }
+        }
+
         
         .header__nav-active {
             background-color: v.$clr-neutral-900;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: v.$ff-secondary;
-        text-transform: uppercase;
-        gap: 1em;
-        font-size: 1.5em;
-        font-weight: 100;
-        padding-left: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: v.$ff-secondary;
+            text-transform: uppercase;
+            gap: 1em;
+            font-size: 1.5em;
+            font-weight: 100;
+            padding-left: 1em;
+
+        
     }
         .header__menu {
+            position: fixed;
         width: 100vw;
         height: 100vh;
         inset: 0;
         z-index: 20;
         background-color: v.$clr-text-heading;
+        @media(min-width: 768px){
+            background-color: transparent;
+            display: flex;
+            width: auto;
+            height: auto;
+            position: static;
+            bottom:  10em;
+            gap: 2em;
+            padding: 0;
+             
+        }
     } 
 
+    .header__item .header__link {
+        color: v.$clr-body;
+        font-size: 1rem;
+        text-transform: none;
+    }
 
 }

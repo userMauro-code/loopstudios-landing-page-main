@@ -17,20 +17,13 @@
 </head>
 <body>
   <div class="container">
-
-  
   <header class="header">
     <div class="header__flex-row">
       <a href="#" class="header__logo">
         <img src="./images/logo.svg" alt="logo Loopstudios">
       </a>
-       <button class="btn__menu" aria-label="open menu" aria-expanded="false" aria-controls="menu"><img src="./images/icon-hamburger.svg" class="header__logo-close" alt=""></button>
-    </div>
-    <div class="header__hero">
-      <h1 class="header__title">Immersive experiences that deliver</h1>
-    </div>
-  </header>
-    <nav class="header__nav">
+       <button class="header__btn-menu" aria-label="open menu" aria-expanded="false" aria-controls="menu"><img src="./images/icon-hamburger.svg" class="header__logo-close" alt=""></button>
+        <nav class="header__nav">
       <ul class="header__menu" id="menu" hidden>
         <li class="header__item"><a class="header__link" href="">About</a></li>
         <li class="header__item"><a class="header__link" href="">Careers</a></li>
@@ -39,17 +32,27 @@
         <li class="header__item"><a class="header__link" href="">Support</a></li>
       </ul>
     </nav>
+      </div>
+     
+    <div class="header__hero">
+      <h1 class="header__title">Immersive experiences that deliver</h1>
+    </div>
+  </header>
+ 
   <main class="main">
     <section class="about">
       <picture class="about__image">
         <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 768px)">
         <img src="./images/mobile/image-interactive.jpg" alt="persona con casco de realidad virtual">
       </picture>
-      <h2 class="about__title">The leader in interactive VR</h2>
-      <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      <div class="about__description">
+        <h2 class="about__title">The leader in interactive VR</h2>
+        <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality 
   projects for some of the best companies around the globe. Our award-winning 
   creations have transformed businesses through digital experiences that bind 
-  to their brand.</p>
+  to their brand.
+        </p>
+      </div> 
     </section>
     <section class="creations">
       <h2 class="creations__title">Our creations</h2>
